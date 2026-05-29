@@ -18,9 +18,7 @@ import Terminos from './pages/Terminos';
 import Reembolso from './pages/Reembolso';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
-import BusquedaAvanzada from "./Components/panels/BusquedaAvanzada";
-
-
+import BusquedaAvanzada from "./Components/BusquedaAvanzada";
 
 
 import PanelCliente from './Components/panels/PanelCliente';
