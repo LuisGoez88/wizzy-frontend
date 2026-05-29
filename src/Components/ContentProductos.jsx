@@ -13,7 +13,7 @@ import ModalConfirmacion from './Modales/ModalConfirmacion';
 import ModalExito from './Modales/ModalExito';
 import ModalError from './Modales/ModalError';
 import ModalInfo from './Modales/ModalInfo';
-import ImageUploader from '../components/ImageUploader';
+import ImageUploader from '../Components/ImageUploader';
 import ConfirmDialog from './ConfirmDialog';
 
 // Componente Tooltip personalizado
