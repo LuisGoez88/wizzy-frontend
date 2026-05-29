@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🆕 SCROLL SUAVE GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🆕 ESTILOS PREMIUM PARA SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c084fc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9333ea;
+}
+
+/* 🆕 SELECCIÓN DE TEXTO PREMIUM */
+::selection {
+  background-color: #9333ea;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #9333ea;
+  color: white;
+}
+
+/* 🆕 FOCUS RING PERSONALIZADO */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid #9333ea;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* 🆕 PREVENCIÓN DE DESBORDAMIENTO EN MÓVIL */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 🆕 ANIMACIONES PERSONALIZADAS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 🆕 EFECTO DE CARGA PARA SKELETONS */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
