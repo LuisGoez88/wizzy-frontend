@@ -18,7 +18,8 @@ import Terminos from './pages/Terminos';
 import Reembolso from './pages/Reembolso';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
-import BusquedaAvanzada from './components/BusquedaAvanzada';
+import BusquedaAvanzada from "./Components/panels/BusquedaAvanzada";
+
 
 
 
