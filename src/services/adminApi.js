@@ -1,9 +1,12 @@
 // services/adminApi.js
 // Servicio exclusivo para el panel de administrador
 
-const API_BASE_URL = import.meta.env.VITE_API_URL 
-  ? `${import.meta.env.VITE_API_URL}/api` 
-  : 'http://localhost:8080/api';
+// 🔥 Detecta automáticamente si es local o producción
+const API_BASE_URL = window.location.hostname === 'localhost'
+  ? 'http://localhost:8080/api'
+  : 'https://api-wizzy.onrender.com/api';
+
+console.log('🔍 [WIZZY] API_BASE_URL:', API_BASE_URL);
 
 // Obtener el token de autenticación
 const getAuthHeaders = () => {
@@ -157,7 +160,6 @@ export const eliminarProducto = async (productoId) => {
   }
 };
 
-// 🆕 CORREGIDO: usa toggle-activo en lugar de toggle-publicado
 export const toggleProductoActivo = async (productoId) => {
   try {
     const response = await fetch(`${API_BASE_URL}/admin/productos/${productoId}/toggle-activo`, {
