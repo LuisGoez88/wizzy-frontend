@@ -1,10 +1,8 @@
 // services/adminApi.js
 // Servicio exclusivo para el panel de administrador
 
-// 🔥 Detecta automáticamente si es local o producción
-const API_BASE_URL = window.location.hostname === 'localhost'
-  ? 'http://localhost:8080/api'
-  : 'https://api-wizzy.onrender.com/api';
+// 🔥 URL FIJA - Directa a Render (sin depender de variables de entorno)
+const API_BASE_URL = 'https://api-wizzy.onrender.com/api';
 
 console.log('🔍 [WIZZY] API_BASE_URL:', API_BASE_URL);
 
